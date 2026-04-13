@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#DCD4D4"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_calculate_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="Calculator"
+            android:textColor="#0D0101"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <!-- Input numbers -->
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1st Number"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="2nd Number"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        android:gravity="center"/>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Addition"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtraction"/>
+
+    <Button
+        android:id="@+id/multi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplication"/>
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Division"/>
+
+    <!-- Result -->
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#75BD40"
+        android:backgroundTint="#55E91E63"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Result"
+        android:textSize="24sp" />
+
+    <!-- Profile Button -->
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
